@@ -75,9 +75,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ɴᴀᴏ ᴛᴏᴍᴏʀɪ
+[✨](https://telegra.ph/file/93b07a50496c85afbdd51.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ᴋᴇʏᴢɪᴀ
 ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [sᴋʏᴢᴜᴇx​](https://t.me/skyzuex) 
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ꜱᴇᴛʜ](https://t.me/xyzseth) 
 """
 
 buttons = [
@@ -100,10 +100,10 @@ buttons = [
 HELP_STRINGS = """
 ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
 
-nao_IMG = "https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg"
+keyzia_IMG = "https://telegra.ph/file/93b07a50496c85afbdd51.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzuX \
+ You can support the project by contacting @xyzseth\
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
                                 {
                                     InlineKeyboardButton(
                                         text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​",
-                                        url="https://t.me/skyzusupport",
+                                        url="https://t.me/sethproject",
                                     )
                                 }
                             ]
@@ -359,7 +359,7 @@ def nao_about_callback(update, context):
     query = update.callback_query
     if query.data == "nao_":
         query.message.edit_text(
-            text=""" 💡 I'm *NaoRobot*, a powerful group management bot built to help you manage your group easily.
+            text=""" 💡 I'm *Keyzia*, a powerful group management bot built to help you manage your group easily.
                  \n• I can restrict users.
                  \n• I can greet users with customizable welcome messages and even set a group's rules.
                  \n• I have an advanced anti-flood system.
@@ -375,7 +375,7 @@ def nao_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="Source", url="https://github.com/Askarbot/NaoRobot"
                     ),
-                    InlineKeyboardButton(text="Dev", url="https://t.mr/skyzuX")
+                    InlineKeyboardButton(text="Dev", url="https://t.me/xyzseth")
                  ],
                  [
                     InlineKeyboardButton(text="🔙 Back", callback_data="nao_back")
@@ -398,7 +398,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi I'm *NaoRobot*
+            text=""" Hi I'm *Keyzia*
                  \nHere is the [Source Code](https://github.com/KennedyProject/NaoRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
