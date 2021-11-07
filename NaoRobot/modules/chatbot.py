@@ -249,7 +249,7 @@ async def inuka(client, message):
 
 
 @pbot.on_message(
-    filters.regex("Nao|nao|robot|sena|NAO")
+    filters.regex("keyzia|zia|key|seth|keyzia")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
