@@ -248,7 +248,7 @@ def gban(update: Update, context: CallbackContext):
         send_to_list(
             bot,
             DRAGONS + DEMONS,
-            f"Gban complete! (User banned in <code>{gbanned_chats}</code> chats)",
+            f"Manusia ini berhasil di eksekusi 😎.(User banned in <code>{gbanned_chats}</code> chats)",
             html=True,
         )
 
@@ -257,9 +257,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("Target berhasil di eksekusi 😎.", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Done! Gbanned.", parse_mode=ParseMode.HTML)
+        message.reply_text("Target berhasil di eksekusi 😎.", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
