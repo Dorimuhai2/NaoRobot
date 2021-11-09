@@ -159,7 +159,7 @@ def gban(update: Update, context: CallbackContext):
 
         else:
             message.reply_text(
-                "This user is already gbanned, but had no reason set; I've gone and updated it!"
+                "HaHa manusia ini sudah ter gbanned, but had no reason set; I've gone and updated it!"
             )
 
         return
