@@ -304,8 +304,8 @@ async def inuka(client, message):
     test = test.replace("key", "zia")
     test = test.replace("key", "zia")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Nao")
-    response = response.replace("aco", "Nao")
+    response = response.replace("Key", "Zia")
+    response = response.replace("key", "zia")
 
     pro = response
     if not "en" in lan and not lan == "":
