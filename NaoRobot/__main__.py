@@ -83,7 +83,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴋᴇʏᴢɪᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="nao_"),
@@ -366,14 +366,14 @@ def nao_about_callback(update, context):
                  \n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n• I check for admins' permissions before executing any command and more stuffs
-                 \n\n_naorobot's licensed under the GNU General Public License v3.0_
-                 \n\nIf you have any question about NaoRobot, let us know at .""",
+                 \n\n_keyzia licensed under the GNU General Public License v3.0_
+                 \n\nIf you have any question about Keyzia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Source", url="https://github.com/Askarbot/NaoRobot"
+                    InlineKeyboardButton(text="Source", url="https://github.com/Dorimuhai/NaoRobot"
                     ),
                     InlineKeyboardButton(text="Dev", url="https://t.me/xyzseth")
                  ],
@@ -399,7 +399,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi I'm *Keyzia*
-                 \nHere is the [Source Code](https://github.com/KennedyProject/NaoRobot) .""",
+                 \nHere is the [Source Code](https://github.com/Dorimuhai/NaoRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -694,7 +694,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yeah Keyzia Kembali!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
