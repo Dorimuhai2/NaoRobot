@@ -56,17 +56,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Tunggu yaa...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Keyzia telah aktif")
+            await lel.edit("Keyzio telah aktif")
             return
-        await lel.edit(f"Keyzia Aktif by {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
+        await lel.edit(f"Keyzio Aktif by {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
 
     elif status == "OFF" or status == "off" or status == "Off":
-        lel = await edit_or_reply(message, "`Processing...`")
+        lel = await edit_or_reply(message, "`eummmm...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("oke Keyzia akan diam")
+            await lel.edit("iya om keyzio akan diam :)")
             return
-        await lel.edit(f"okeey keyzia akan diam antas perintah {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
+        await lel.edit(f"iya om keyzio akan diam antas perintah {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
